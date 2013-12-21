@@ -1,13 +1,15 @@
-//[¤[mdx][https://mdx.googlecode.com/git/id.js]@[vers_1.0_¤]¤¤¤ ...
+//[¤[mdx][https://mdx.googlecode.com/git/id.js][https://github.sanecin.ru/code/js/id.js]@[vers_1.0_¤]¤¤¤ ...
 
 //======== Id ===========
 // ... element ID query ... speed ... element[ID="f"] => Id.f ... !q ...
 
-(window.Id=function(){
+(function(){
 
  	'use strict';
 
-	var i,j
+	var Id=window.Id={};
+
+	var i,j;
 // ... for next ... window.onload only ...
 	var _=function (){for(i=(j=document.querySelectorAll('[id]')).length;i--;Id[j[i].id]=j[i]){}}
 
