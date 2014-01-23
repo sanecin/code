@@ -16,9 +16,9 @@ isS=function(k){return "string"===typeof k}
 
 			if(isF(k)) return k;
 
-			if(isS(k)&isF(window[k])) return window[k];	// ... ¤ ...
+			if(isS(k)&isF(window[k])) return window[k];
 
-			if (Lib._(k)) return k; ...
+			if (Lib._(k)) return k;
 
 			return false;
 
